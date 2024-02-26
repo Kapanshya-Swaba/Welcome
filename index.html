@@ -13,7 +13,15 @@
     <link rel="stylesheet" href="/css/bootstrap.css">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/bootstrap-grid.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+          rel="stylesheet">
+    <!--    FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+          integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 
 
@@ -21,9 +29,10 @@
 <!--       This will be the navigation bar so don't worry much about it, the code will be improved very soon when the CSS is added,
            The navigation will later be discussed on how it will be layed out and its behaviour on scroll
       -->
-<nav class="navbar d-flex navbar-expand-lg bg-dark-subtle-d sticky-top justify-content-center">
+<nav class="navbar navbar-expand-lg bg-dark-subtle-d sticky-top justify-content-between">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">Navbar</a>
+
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -42,51 +51,161 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                        aria-expanded="false">
-                        Dropdown link
+                        Click Me
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Curriculum Vital</a></li>
+                        <li><a class="dropdown-item" href="#">Hang Out</a></li>
+                        <li><a class="dropdown-item" href="#">Anony Message</a></li>
                     </ul>
                 </li>
             </ul>
         </div>
+        <div class="navbar-center">
+            <button class="btn btn-dark">Hire Me</button>
+        </div>
     </div>
 </nav>
+
 <main>
-    <div class=" ">
+    <div class="header">
         <div class="container text-center">
             <h1 style="margin-top: 2%;">Welcome</h1>
         </div>
     </div>
-    <div class="float-start">
-        <img src="/img/Profile.jpg" style="width: 300px; height: 300px;" alt="">
-        <button class="btn btn-outline-secondary" style="display: block">Hire Me</button>
-        <p>I am <span> </span></p>
-    </div>
-    <!--<section class="">
-        <div class="container">
-            <h1 class="text-center font-monospace" style="color: white; margin-top: 3%;"> Welcome </h1>
-            <span> </span>
+    <section>
+        <div class=" introduction-section  ">
+            <div class="d-flex flex-row ">
+                <div class="image-left m-auto">
+                    <img src="/img/profile.jpeg" alt="" class="img-fluid"
+                         style="height: auto; border-radius: 6rem 1rem 6rem 1rem; width: 100%">
+                </div>
+                <div class="text-right">
+                    <p class="text-center p-sm-5 m-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Tincidunt praesent semper feugiat nibh sed pulvinar. Urna cursus
+                        eget nunc scelerisque viverra. Eu non diam phasellus vestibulum lorem. Metus aliquam eleifend mi
+                        in nulla posuere sollicitudin. In ornare quam viverra orci sagittis. Nisl nisi scelerisque eu
+                        ultrices vitae auctor. Quis varius quam quisque id diam vel. Nibh venenatis cras sed felis eget.
+                        Odio facilisis mauris sit amet massa vitae. Magna sit amet purus gravida quis blandit
+                        turpis.</p>
+                    <h2 style="padding: 2rem" class="text-center">I'm a Frontend <span
+                            id="gradient-color">Developer</span></h2>
+                </div>
+            </div>
         </div>
-        <div class="">
-            <h1 class="float-start" style="color: white;">Hello, I'm [Name]</h1>
-            <span id="change-animation"></span>
 
-            <div class="float-start">
-                &lt;!&ndash;                Add an image in the /img directory and change the src attribute in the img tag to add your image&ndash;&gt;
-                <img class="img-fluid " src="img/" alt="" id="profile-image">
+    </section>
 
-                <button class="btn btn-lg btn-outline-secondary text-center ">Hire Me</button>
+    <section class="Skill-section ">
+        <h1 class="text-center p-3"> Skill's</h1>
+        <!-- Progress Bars -->
+        <div class="container-fluid d-flex flex-column justify-content-center">
+            <div class="text-center"> <!-- Wrap the heading and progress bar in a div -->
+                <h6>HTML</h6>
+                <div class="progress mx-auto">
+                    <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                         aria-valuemin="0" aria-valuemax="100">100%
+                    </div>
+                </div>
+            </div>
+            <div class="text-center"> <!-- Wrap the heading and progress bar in a div -->
+                <h6>CSS</h6>
+                <div class="progress mx-auto d-flex">
+                    <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80"
+                         aria-valuemin="0" aria-valuemax="100">80%
+                    </div>
+                </div>
+            </div>
+            <div class="text-center"> <!-- Wrap the heading and progress bar in a div -->
+                <h6>JS</h6>
+                <div class="progress mx-auto">
+                    <div class="progress-bar" role="progressbar" style="width: 45%;" aria-valuenow="45"
+                         aria-valuemin="0" aria-valuemax="100">45%
+                    </div>
+                </div>
+            </div>
+            <div class="text-center"> <!-- Wrap the heading and progress bar in a div -->
+                <h6>REACT</h6>
+                <div class="progress mx-auto">
+                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                         aria-valuemin="0" aria-valuemax="100">25%
+                    </div>
+                </div>
+            </div>
+
+<!--            Additional Skill' s -->
+            <div class="addition__Skills text-center">
+                <h1 class="text-center mt-4">Additional Skills </h1>
+                <ul class=" mt-3">
+                    <li><a href=" " style="color: white">Cybersecurity</a> </li>
+                    <li><a href="" style="color: white;">Networks</a></li>
+                    <li><a  href=" " style="color: white">Leadership</a></li>
+
+                </ul>
+            </div>
+            </div>
+
+        <!-- End of the Progress Bars -->
+    </section>
+
+    <section class="experience-section">
+
+    </section>
+    <section class="project-section">
+        <h1 class="text-center p-3">Projects</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <img src="/img/projectFiles/Project3.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-sm">
+                    <img src="/img/projectFiles/Project.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-sm">
+                    <img src="/img/projectFiles/Project-2.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row mt-4">
+                    <div class="col-sm">
+                        <img src="/img/projectFiles/klaudia-piaskowska-g55bG1O5Lf0-unsplash.jpg" class="img-fluid"
+                             alt="">
+                    </div>
+                    <div class="col-sm">
+                        <img src="/img/projectFiles/pexels-aa-dil-1961183.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-sm">
+                        <img src="/img/projectFiles/pexels-thiago-matos-2008426.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <hr>
-    <section class="Skill-section">
-        <h1>SE</h1>
-    </section>-->
+    <section class="contact-section">
 
+    </section>
+
+    <hr>
+    <!-- ========= Footer Section ======== -->
+    <section class="footer text-center d-flex justify-content-center">
+
+        <ul>
+            <li>
+                <a href="#">
+                    <i class="fab fa-facebook-f icon"></i> </a>
+            </li>
+            <li>
+                <a href="#"><i class="fab fa-twitter icon"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fab fa-linkedin-in icon"></i></a></li>
+            <li>
+                <a href="#"><i class="fab fa-google-plus-g icon"></i></a></li>
+        </ul>
+
+    </section>
 
 </main>
 
