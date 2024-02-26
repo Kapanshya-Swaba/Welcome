@@ -1,0 +1,52 @@
+@import url(/css/bootstrap.css);
+@import url(/css/bootstrap.min.css);
+@import url(/css/bootstrap-grid.css);
+
+/*Global Variables */
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1,h2,h3,h4,h5 {
+    color: white !important;
+}
+p{
+    color: white;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar-nav{
+    justify-content: space-around;
+    align-items: center;
+}
+
+#change-animation::before{
+    content: "FrontEnd Developer";
+
+}
+span:before {
+    content: "Developer";
+    color: white;
+}
+
+#profile-image {
+    width: 100%;
+    height: 300px;
+    border-radius: 50%;
+}
